@@ -1,0 +1,32 @@
+{
+  "targets": {
+    "default": {
+      "resources": {
+        "runtimes": {
+          "FinPilotMCP": {
+            "runtimeId": "finPlot_FinPilotMCP-lgyHYvHEJU",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:380277571320:runtime/finPlot_FinPilotMCP-lgyHYvHEJU",
+            "roleArn": "arn:aws:iam::380277571320:role/AgentCore-finPlot-default-ApplicationAgentFinPilotM-Z9v1Sc8dQXpV"
+          }
+        },
+        "memories": {
+          "FinPilotMCPMemory": {
+            "memoryId": "finPlot_FinPilotMCPMemory-pdPXik2CLI",
+            "memoryArn": "arn:aws:bedrock-agentcore:us-east-1:380277571320:memory/finPlot_FinPilotMCPMemory-pdPXik2CLI"
+          }
+        },
+        "mcp": {
+          "gateways": {
+            "finpilot-gateway": {
+              "gatewayId": "finplot-finpilot-gateway-7l8kfvonie",
+              "gatewayArn": "arn:aws:bedrock-agentcore:us-east-1:380277571320:gateway/finplot-finpilot-gateway-7l8kfvonie",
+              "gatewayUrl": "https://finplot-finpilot-gateway-7l8kfvonie.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp"
+            }
+          }
+        },
+        "stackName": "AgentCore-finPlot-default",
+        "deployHash": "234f99b2fdddcd0b"
+      }
+    }
+  }
+}
