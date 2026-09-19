@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.agentcore.aws.dev/v1/agentcore.json",
+  "name": "FinPilot",
+  "version": 1,
+  "managedBy": "CDK",
+  "tags": {
+    "agentcore:created-by": "agentcore-cli",
+    "agentcore:project-name": "FinPilot"
+  },
+  "runtimes": [
+    {
+      "name": "FinPilotMCP",
+      "build": "CodeZip",
+      "entrypoint": "app/mcp/server.py",
+      "codeLocation": "../finpilot-runtime",
+      "runtimeVersion": "PYTHON_3_14",
+      "networkMode": "PUBLIC",
+      "instrumentation": {
+        "enableOtel": false
+      },
+      "protocol": "MCP"
+    }
+  ],
+  "memories": [
+    {
+      "name": "FinPilotMemory",
+      "eventExpiryDuration": 30,
+      "strategies": []
+    }
+  ],
+  "knowledgeBases": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "abTests": [],
+  "harnesses": [
+    {
+      "name": "FinPilot",
+      "path": "app/FinPilot"
+    }
+  ],
+  "datasets": [],
+  "capacityProviders": [],
+  "payments": []
+}

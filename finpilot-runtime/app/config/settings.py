@@ -10,7 +10,6 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
 
     aws_region: str = "us-east-1"
-    agentcore_memory_id: str
     bedrock_prompt_router_arn: str
 
     alpha_vantage_api_key: str

@@ -23,3 +23,5 @@ bedrock-agentcore
 langchain-mcp-adapters 
 mcp-use
 mcp[cli]
+
+langgraph-checkpoint-aws

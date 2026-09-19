@@ -1,5 +1,19 @@
-.venv
-.env
+
 
 FinPilotMCP/.venv
-FinPilotMCP/.env
+finpilot-runtime/.env
+
+
+
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+
+
+FinPilot/agentcore/.cli/
+FinPilot/agentcore/.llm-context/
+FinPilot/agentcore/cdk/node_modules/
+FinPilot/agentcore/cdk/cdk.out/
+FinPilot/agentcore/.cache

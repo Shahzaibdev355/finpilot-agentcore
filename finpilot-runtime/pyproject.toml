@@ -27,5 +27,4 @@ dependencies = [
     "python-multipart>=0.0.32",
     "tenacity>=9.1.4",
     "uvicorn>=0.53.0",
-    "langgraph-checkpoint-aws>=1.2.3",
 ]

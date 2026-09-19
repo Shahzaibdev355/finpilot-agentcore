@@ -10,15 +10,11 @@ from typing_extensions import TypedDict
 from app.config.settings import settings
 from app.services.bedrock.client import get_bedrock_runtime_client
 
-
 from app.agents.market_agent import create_market_agent
 from app.agents.news_agent import create_news_agent
 from app.agents.currency_agent import create_currency_agent
 from app.agents.portfolio_agent import create_portfolio_agent
 from app.agents.financial_analysis_agent import create_financial_analysis_agent
-
-
-from app.memory.agentcore_memory import get_memory_saver
 
 
 class SupervisorState(TypedDict):
@@ -238,6 +234,4 @@ graph_builder.add_conditional_edges(
 
 graph_builder.add_edge("tools", "llm")
 
-memory_saver = get_memory_saver()
-
-supervisor_agent = graph_builder.compile(checkpointer=memory_saver)
+supervisor_agent = graph_builder.compile()
