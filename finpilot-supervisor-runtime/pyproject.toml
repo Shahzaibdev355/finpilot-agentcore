@@ -29,4 +29,5 @@ dependencies = [
     "uvicorn>=0.53.0",
     "langgraph-checkpoint-aws>=1.2.3",
     "openinference-instrumentation-langchain>=0.1.76",
+    "aws-opentelemetry-distro>=0.20.0",
 ]

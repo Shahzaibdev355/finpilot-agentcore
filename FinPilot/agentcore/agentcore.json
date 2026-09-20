@@ -19,6 +19,15 @@
         "enableOtel": false
       },
       "protocol": "MCP"
+    },
+    {
+      "name": "FinPilotSupervisor",
+      "build": "CodeZip",
+      "entrypoint": "agent.py",
+      "codeLocation": "..\\finpilot-supervisor-runtime/",
+      "runtimeVersion": "PYTHON_3_14",
+      "networkMode": "PUBLIC",
+      "protocol": "HTTP"
     }
   ],
   "memories": [
@@ -33,7 +42,12 @@
   "evaluators": [],
   "onlineEvalConfigs": [],
   "agentCoreGateways": [],
-  "policyEngines": [],
+  "policyEngines": [
+    {
+      "name": "FinPilotPolicyEngine",
+      "policies": []
+    }
+  ],
   "configBundles": [],
   "abTests": [],
   "harnesses": [

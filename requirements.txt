@@ -25,3 +25,5 @@ mcp-use
 mcp[cli]
 
 langgraph-checkpoint-aws
+openinference-instrumentation-langchain
+aws-opentelemetry-distro

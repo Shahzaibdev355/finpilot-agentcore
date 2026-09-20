@@ -17,3 +17,6 @@ FinPilot/agentcore/.llm-context/
 FinPilot/agentcore/cdk/node_modules/
 FinPilot/agentcore/cdk/cdk.out/
 FinPilot/agentcore/.cache
+
+finpilot-supervisor-runtime/.venv
+finpilot-supervisor-runtime/.env
